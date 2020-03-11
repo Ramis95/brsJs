@@ -1,0 +1,73 @@
+<html dir="ltr" lang="ru"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Тестовое задание</title>
+    <meta name="description" content="Тестовое задание на сайте">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="main.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="block1">
+        <h3>Форма добавления/редактирования организации</h3>
+        <div class="row">
+            <form method="post" action="" id="user_form">
+                <div class="col-sm-3 col-xs-12">
+                    <input type="text" name="full_name" placeholder="Название" class="form-control">
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <input type="text" name="address" placeholder="Адрес" class="form-control">
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <input type="number" name="phone" placeholder="Номер" class="form-control">
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <input type="hidden" name="ins_id" value="">
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <button type="submit" class="btn">
+                        Сохранить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="block2">
+
+        <h3>
+            Список организаций
+        </h3>
+
+        <div id="ins_list_header">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Имя:</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Адрес:</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Телефон:</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="ins_list">
+        </div>
+
+    </div>
+</div>
+
+
+</body>
